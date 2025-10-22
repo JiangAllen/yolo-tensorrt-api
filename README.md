@@ -115,4 +115,4 @@ file: <uploaded image>
 | Slow FPS | CPU fallback or large image size | Ensure model runs on GPU / resize inputs |
 
 ## 📄 License
-### This software is provided for research and demonstration purposes only. Do not use this code in production environments.
+### This software is provided for research and demonstration purposes only.
