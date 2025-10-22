@@ -110,6 +110,3 @@ file: <uploaded image>
 | `Invalid image format` | Corrupted or unsupported image file | Ensure file is valid `.jpg` / `.png` |
 | `No file` error | Missing `file` field in request | Use `multipart/form-data` upload |
 | Slow FPS | CPU fallback or large image size | Ensure model runs on GPU / resize inputs |
-
-## 📄 License
-### This software is provided for research and demonstration purposes only.
