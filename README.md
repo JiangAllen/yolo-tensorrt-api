@@ -20,7 +20,7 @@ This setup is ideal for **offline GPU inference** with high performance (30–40
 
 ## 🏗️ Architecture
 
-### `server.py`
+### 🖥️ `server.py`
 - Initializes GPU and loads YOLOv10 TensorRT engine (`.engine` file)
 - Provides an endpoint `/predictimage` for image detection
 - Accepts image files, decodes them via OpenCV, and performs inference
@@ -35,7 +35,7 @@ This setup is ideal for **offline GPU inference** with high performance (30–40
   }
   ```
 
-### `client.py`
+### 💡 `client.py`
 - Sends images to the Flask server via POST /predictimage
 - Reads all .jpg, .jpeg, .png files in ./src/
 - Prints formatted JSON detection results in the console
