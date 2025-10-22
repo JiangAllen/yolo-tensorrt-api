@@ -32,7 +32,7 @@ This project provides a **Flask-based REST API server** for performing real-time
   }
   ```
 
-### 💡 `client.py`
+### 🧑‍💻 `client.py`
 - Sends images to the Flask server via POST /predictimage
 - Reads all .jpg, .jpeg, .png files in ./src/
 - Prints formatted JSON detection results in the console
