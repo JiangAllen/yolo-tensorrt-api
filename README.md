@@ -75,3 +75,44 @@ This setup is ideal for **offline GPU inference** with high performance (30–40
   - Place test images under ./src/
   - Run ```python client.py```
     
+## 🧩 API Endpoints
+### `POST /predictimage`
+**Description:**  
+Perform object detection on a single image.
+
+**Request:**
+```
+Content-Type: multipart/form-data
+file: <uploaded image>
+```
+
+**Response:**
+```
+{
+  "detections": [
+    {
+      "classid": 0,
+      "classname": "person",
+      "confidence": 0.97,
+      "box": [15, 20, 240, 400]
+    }
+  ],
+  "fps": 35.2,
+  "device": "cuda"
+}
+```
+
+**Error Response:**
+```{"error": "No file"}```
+
+## 🛠️ Troubleshooting
+
+| Issue | Possible Cause | Solution |
+|-------|----------------|-----------|
+| `RuntimeError: CUDA not available` | GPU driver or CUDA not installed | Check `torch.cuda.is_available()` |
+| `Invalid image format` | Corrupted or unsupported image file | Ensure file is valid `.jpg` / `.png` |
+| `No file` error | Missing `file` field in request | Use `multipart/form-data` upload |
+| Slow FPS | CPU fallback or large image size | Ensure model runs on GPU / resize inputs |
+
+## 📄 License
+### This software is provided for research and demonstration purposes only. Do not use this code in production environments.
