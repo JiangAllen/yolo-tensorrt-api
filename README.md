@@ -1,7 +1,8 @@
 # YOLO TensorRT Object Detection API
 
 ## 🧭 Overview
-This project provides a **Flask-based REST API server** for performing real-time object detection using a **YOLOv10 model accelerated with TensorRT**.  
+This project provides a **Flask-based REST API server** for performing real-time object detection using a **YOLOv10 model accelerated with TensorRT**.
+
 It also includes a **client script** that automatically sends local images to the server and displays detection results in JSON format.
 
 This setup is ideal for **offline GPU inference** with high performance (30–40 FPS on YOLOv10m engine).
