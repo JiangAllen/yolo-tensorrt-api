@@ -73,8 +73,5 @@ This setup is ideal for **offline GPU inference** with high performance (30–40
   - Server will start at: http://0.0.0.0:8000
 #### 4. Test with client
   - Place test images under ./src/
-  - Run
-      ```
-      python client.py
-      ```
+  - Run ```python client.py```
     
