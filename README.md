@@ -57,15 +57,15 @@ This setup is ideal for **offline GPU inference** with high performance (30–40
     ```
 #### 2. Prepare the YOLOv10 model
   - Place your trained TensorRT model file under the project directory:
-    ```
-    ./yolov10m.engine
-    ```
+```
+./yolov10m.engine
+```
  - You may also use .pt weights and export manually:
-   ```
-    from ultralytics import YOLO
-    model = YOLO("yolov10m.pt")
-    model.export(format="engine", half=True)
-   ```
+```
+from ultralytics import YOLO
+model = YOLO("yolov10m.pt")
+model.export(format="engine", half=True)
+```
 #### 3. Start the server
   ```
   python server.py
