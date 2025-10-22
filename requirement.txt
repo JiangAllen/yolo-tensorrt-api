@@ -1,0 +1,11 @@
+environment：Anaconda
+IDE：Pycharm
+Python：3.10
+
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+pip install ultralytics
+pip install flask
+pip install numpy
+pip install opencv-python
+pip install requests
+pip install tensorrt
