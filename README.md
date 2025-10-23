@@ -22,15 +22,15 @@ This project provides a **Flask-based REST API server** for performing real-time
 - Provides an endpoint `/predictimage` for image detection
 - Accepts image files, decodes them via OpenCV, and performs inference
 - Returns detection results in structured JSON format with:
-  ```json
-  {
-      "detections": [
-          {"classid": 0, "classname": "person", "confidence": 0.97, "box": [x1, y1, x2, y2]}
-      ],
-      "fps": 33.3,
-      "device": "cuda"
-  }
-  ```
+```json
+{
+    "detections": [
+        {"classid": 0, "classname": "person", "confidence": 0.97, "box": [x1, y1, x2, y2]}
+    ],
+    "fps": 33.3,
+    "device": "cuda"
+}
+```
 
 ### 🧑‍💻 `client.py`
 - Sends images to the Flask server via POST /predictimage
