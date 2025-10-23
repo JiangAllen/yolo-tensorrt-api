@@ -42,9 +42,9 @@ This project provides a **Flask-based REST API server** for performing real-time
 - Python 3.9+
 - GPU with CUDA support (recommended)
 - Installed dependencies:
-  ```
-  pip install flask torch torchvision torchaudio ultralytics opencv-python requests
-  ```
+```
+pip install flask torch torchvision torchaudio ultralytics opencv-python requests
+```
 
 ### ⚙️ Setup & Run
 #### 1. Clone this repository
