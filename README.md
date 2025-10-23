@@ -48,10 +48,10 @@ This project provides a **Flask-based REST API server** for performing real-time
 
 ### ⚙️ Setup & Run
 #### 1. Clone this repository
-    ```
-    git clone https://github.com/<your-username>/yolov10-tensorrt-api.git
-    cd yolov10-tensorrt-api
-    ```
+```
+git clone https://github.com/<your-username>/yolov10-tensorrt-api.git
+cd yolov10-tensorrt-api
+```
 #### 2. Prepare the YOLO model
   - Place your trained TensorRT model file under the project directory:
 ```
